@@ -15,7 +15,7 @@ public class BuildPc {
         MonitorSize = monitorSize;
         Bluetooth = bluetooth;
         Finger = finger;
-        BuildPc[] PcMass = new BuildPc[]{};
+
     }
 
     public void showPcInfo() {
@@ -43,9 +43,8 @@ public class BuildPc {
             System.out.println(model + ":Has fast core");
         } else if (core < 4) {
             System.out.println(model + ":Has middle core");
-        } else {
-            System.out.println("");
         }
+
     }
 
     public void CdSpeedStatus() {
