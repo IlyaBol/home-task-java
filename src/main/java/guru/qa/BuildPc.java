@@ -7,6 +7,7 @@ public class BuildPc {
     int MonitorSize;
     boolean Bluetooth;
     boolean Finger;
+    String[] pcmodel = {"Asus", "Dexp", "Hp", "Acer", "Dell", "lenovo"};
 
     public BuildPc(String model, int core, int cdSpeed, int monitorSize, boolean bluetooth, boolean finger) {
         this.model = model;
@@ -41,7 +42,7 @@ public class BuildPc {
     public void CoreStatus() {
         if (core >= 4) {
             System.out.println(model + ":Has fast core");
-        } else if (core < 4) {
+        } else {
             System.out.println(model + ":Has middle core");
         }
 
@@ -50,14 +51,14 @@ public class BuildPc {
     public void CdSpeedStatus() {
         if (CdSpeed >= 24) {
             System.out.println(model + ":Has fast CD");
-        } else if (CdSpeed < 24) {
+        } else {
             System.out.println(model + ":Has slow CD");
         }
 
     }
 
     public void BluetoothStatus() {
-        if (Bluetooth == true) {
+        if (Bluetooth) {
             System.out.println(model + ":Has bluetooth");
         } else {
             System.out.println(model + ":Doesn't have bluetooth");
@@ -66,19 +67,19 @@ public class BuildPc {
     }
 
     public void FingerStatus() {
-        if (Finger == true) {
+        if (Finger) {
             System.out.println(model + ":Has FingerScanner");
         } else {
             System.out.println(model + ":Doesn't have FingerScanner");
         }
 
     }
+
+    void PcsettingsType() {
+        int i = 0;
+        while (i < pcmodel.length) {
+            System.out.println(pcmodel[i]);
+            i++;
+        }
+    }
 }
-
-
-
-
-
-
-
-

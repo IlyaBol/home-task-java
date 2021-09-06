@@ -9,16 +9,17 @@ public class Main {
         BuildPc Pc4 = new BuildPc("Acer", 2, 32, 14, false, false);
         BuildPc Pc5 = new BuildPc("Dell", 4, 24, 15, false, true);
         BuildPc Pc6 = new BuildPc("lenovo", 6, 12, 16, true, false);
-        BuildPc[] PcMass = new BuildPc[]{Pc1, Pc2, Pc3, Pc4, Pc5, Pc6};
 
 
-        Pc1.showPcInfo(); // Вся информация о пк
-        Pc2.ShowModel(); // Информация о модели
-        Pc3.CoreStatus(); // Какой процессор имеет
-        Pc4.BluetoothStatus(); // Имеет или нет блютуз
-        Pc5.FingerStatus(); // Имеет ли сканер
-        Pc6.CdSpeedStatus(); // Какая скорость диска
-        Pc2.ShowMonitor(); // Размер монитора
+        Pc1.showPcInfo();
+        Pc2.ShowModel();
+        Pc3.CoreStatus();
+        Pc4.BluetoothStatus();
+        Pc5.FingerStatus();
+        Pc6.CdSpeedStatus();
+        Pc2.ShowMonitor();
+        Pc1.PcsettingsType();
+
 
     }
 
